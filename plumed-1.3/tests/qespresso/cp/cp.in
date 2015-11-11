@@ -1,0 +1,59 @@
+&control
+    title = 'ch3cl',
+    calculation = 'cp',
+    restart_mode = 'reset_counters',
+    ndr = 51,
+    ndw = 52,
+    nstep = 10,
+    dt    = 10.0,
+    etot_conv_thr = 1.d-9,
+    ekin_conv_thr = 1.d-5,
+    pseudo_dir = '../pseudo/',
+    prefix = 'ch3cl'
+ /
+
+ &system
+    ibrav = 8,
+    celldm(1) = 18.d0,
+    celldm(2) = 0.666666d0,
+    celldm(3) = 0.666666d0,
+    nat  = 6,
+    ntyp = 3,
+    tot_charge = -1,
+    ecutwfc = 25.0,
+    ecutrho = 100.0,
+    nr1b = 24, nr2b = 24, nr3b = 24,
+ /
+
+ &ELECTRONS
+  emass = 600.d0,
+  emass_cutoff = 2.5d0,
+  orthogonalization = 'ortho',
+  electron_dynamics = 'verlet',
+  electron_temperature = 'nose',
+  fnosee = 200.d0,
+  ekincw = 0.007d0,
+ /
+
+ &IONS
+  ion_dynamics = 'verlet',
+  ion_temperature = 'nose',
+  tempw = 300.d0,
+  fnosep = 60.d0,
+  nhpcl = 4,
+  ndega = 0,
+  nhptyp = 0,
+ /
+
+ATOMIC_SPECIES
+ Cl 35.4527d0 Cl.blyp-mt.UPF
+ C 12.0107d0 C.blyp-mt.UPF
+ H 1.00794d0 H.blyp-vbc.UPF
+
+ATOMIC_POSITIONS bohr
+Cl      12.880706242   6.000000000   5.994035868
+Cl       3.581982751   6.000000000   5.989431927
+C        9.410606817   6.000000000   6.004535337
+H        8.743333410   4.313700292   5.030609604
+H        8.743333410   7.686299708   5.030609604
+H        8.746264064   6.000000000   7.952930073

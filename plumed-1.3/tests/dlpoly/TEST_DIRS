@@ -1,0 +1,18 @@
+#
+# put all the dirs you need for testing
+#
+general
+angle
+angle_group
+coord
+dihcor
+distance
+distance_group
+energy
+grid
+position
+rgyr
+torsion_group
+torsion
+well_tempered
+steer

@@ -1,0 +1,24 @@
+REMARK  FINAL COORDINATES WRITTEN BY NAMD AT TIMESTEP 50000
+ATOM      1  C   ALA     2       2.010   0.371   1.593  1.00  0.00      DIA    
+ATOM      2  O   ALA     2       2.547   1.453   1.313  0.00  0.00      DIA    
+ATOM      3  NT  ALA     2       2.040  -0.080   2.821  0.00  0.00      DIA    
+ATOM      4  HNT ALA     2       1.734  -0.999   3.131  0.00  0.00      DIA    
+ATOM      5  CAT ALA     2       2.867   0.652   3.803  0.00  0.00      DIA    
+ATOM      6  HT1 ALA     2       3.869   0.864   3.439  0.00  0.00      DIA    
+ATOM      7  HT2 ALA     2       2.308   1.549   4.102  0.00  0.00      DIA    
+ATOM      8  HT3 ALA     2       2.900   0.005   4.678  0.00  0.00      DIA    
+ATOM      9  CAY ALA     2       0.862   0.645  -3.053  0.00  0.00      DIA    
+ATOM     10  HY1 ALA     2      -0.139   0.678  -3.500  0.00  0.00      DIA    
+ATOM     11  HY2 ALA     2       1.507   0.056  -3.756  0.00  0.00      DIA    
+ATOM     12  HY3 ALA     2       1.413   1.592  -2.963  0.00  0.00      DIA    
+ATOM     13  CY  ALA     2       0.813  -0.189  -1.822  0.00  0.00      DIA    
+ATOM     14  OY  ALA     2       0.049  -1.137  -1.847  0.00  0.00      DIA    
+ATOM     15  N   ALA     2       1.430   0.244  -0.710  1.00  0.00      DIA    
+ATOM     16  HN  ALA     2       1.844   1.158  -0.648  0.00  0.00      DIA    
+ATOM     17  CA  ALA     2       1.292  -0.543   0.539  0.00  0.00      DIA    
+ATOM     18  HA  ALA     2       0.230  -0.519   0.759  0.00  0.00      DIA    
+ATOM     19  CB  ALA     2       1.831  -1.933   0.531  0.00  0.00      DIA    
+ATOM     20  HB1 ALA     2       1.584  -2.455   1.487  0.00  0.00      DIA    
+ATOM     21  HB2 ALA     2       1.516  -2.465  -0.410  0.00  0.00      DIA    
+ATOM     22  HB3 ALA     2       2.954  -1.808   0.507  0.00  0.00      DIA    
+END

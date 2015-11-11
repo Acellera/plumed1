@@ -1,0 +1,79 @@
+# PLUMED 
+ plumed            on
+ plumedfile        plumed.dat
+
+# set system
+coordinates    suc_cpep_wat.pdb 
+bincoordinates output.0.coor 
+binvelocities  output.0.vel 
+#
+# force field
+#
+amber           yes
+parmfile        suc_cpep_wat.prmtop 
+readexclusions  no
+exclude         scaled1-4
+scnb            2.0
+1-4scaling      0.833333
+#
+# shake
+#
+rigidBonds all
+rigidIterations 300
+#
+# list
+#
+switching on
+switchdist 8.0
+cutoff 12.0
+pairlistdist 13.5
+stepspercycle 20
+pairlistsPerCycle       2
+#
+# Respa
+#
+fullElectFrequency       2
+nonbondedFreq            1
+# integrator
+timestep 2.0 
+#
+#  output
+#
+outputenergies 1000 
+outputname     output.1 
+outputtiming   1000 
+binaryoutput   yes 
+#
+# DCD
+#
+DCDfile        cpep.dcd 
+DCDfreq        1000
+#
+# restart
+#
+restartname    restart
+restartfreq    1000
+binaryrestart  yes
+#
+#PME
+#
+PME yes
+PMEGridSpacing 1.0
+PMEInterpOrder 4  
+#
+# Periodic description
+#
+cellBasisVector1  35.2793 0.0 0.0 
+cellBasisVector2   0.0 35.2793  0.0
+cellBasisVector3   0.0    0.0 35.2793 
+#
+#minimization on
+#temperature 300.0
+# Constant Temperature Control
+langevin            on    
+langevinDamping     5     
+langevinTemp        277 
+#
+#script 
+numsteps     100
+seed         791064882

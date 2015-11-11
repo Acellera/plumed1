@@ -1,0 +1,90 @@
+33
+# take just the last line of the file and compare it all
+     !  0  ! std_out ! ../clean_dlpoly.sh
+#  step     
+     !  1  ! std_out  ! ../clean_dlpoly.sh
+# eng_tot 
+     !  2  ! std_out  ! ../clean_dlpoly.sh
+# temp_tot
+     !  3  ! std_out  ! ../clean_dlpoly.sh
+# eng_cfg   
+     !  4  ! std_out  ! ../clean_dlpoly.sh
+# eng_vdw
+     !  5  ! std_out  ! ../clean_dlpoly.sh
+# eng_cou    
+     !  6  ! std_out  ! ../clean_dlpoly.sh
+# eng_bnd      
+     !  7  ! std_out  ! ../clean_dlpoly.sh
+# eng_ang  
+     !  8  ! std_out  ! ../clean_dlpoly.sh
+# eng_dih  
+     !  9  ! std_out  ! ../clean_dlpoly.sh
+# eng_tet 
+     !  10 ! std_out  ! ../clean_dlpoly.sh
+# time(ps)  
+     !  11 ! std_out  ! ../clean_dlpoly.sh
+# eng_pv    
+     !  12 ! std_out  ! ../clean_dlpoly.sh
+# temp_rot  
+     !  13 ! std_out  ! ../clean_dlpoly.sh
+# vir_cfg    
+     !  14 ! std_out  ! ../clean_dlpoly.sh
+# vir_vdw   
+     !  15 ! std_out  ! ../clean_dlpoly.sh
+# vir_cou 
+     !  16 ! std_out  ! ../clean_dlpoly.sh
+# vir_bnd 
+     !  17 ! std_out  ! ../clean_dlpoly.sh
+# vir_ang
+     !  18 ! std_out  ! ../clean_dlpoly.sh
+# vir_con  
+     !  19 ! std_out  ! ../clean_dlpoly.sh
+# vir_tet
+     !  20 ! std_out  ! ../clean_dlpoly.sh
+# cpu  (s)    
+     !  21 ! std_out  ! ../clean_dlpoly.sh
+# volume   
+     !  22 ! std_out  ! ../clean_dlpoly.sh
+# temp_shl     
+     !  23 ! std_out  ! ../clean_dlpoly.sh
+# eng_shl 
+     !  24 ! std_out  ! ../clean_dlpoly.sh
+# vir_shl    
+     !  25 ! std_out  ! ../clean_dlpoly.sh
+# alpha   
+     !  26 ! std_out  ! ../clean_dlpoly.sh
+# beta   
+     !  27 ! std_out  ! ../clean_dlpoly.sh
+# gamma 
+     !  28 ! std_out  ! ../clean_dlpoly.sh
+# vir_pmf  
+     !  29 ! std_out  ! ../clean_dlpoly.sh
+# press
+     !  30 ! std_out  ! ../clean_dlpoly.sh
+# HILLS
+     !  0  ! HILLS    ! ../clean_dlpoly.sh
+# COLVAR
+     !  0 ! COLVAR    ! ../clean_dlpoly.sh
+#
+# these are the tests the can be selected for regtesting. 
+# do regtest will grep for test_grep (first column) and look if the numeric value (no value will try to match  the last line )
+# at column test_col (second col, 0 stand for all the line matching ) changes with respect to the reference.
+# the test number in TEST_FILES corresponds to the lines in this file.
+# the third column is the file name in which the test should be executed. "std_out"  
+# is the standard output for the simulation while all the others are taken literally
+# the fourth column (optional) provide the possibility of executing a script before the  
+# run is performed ( used for checking the restart of HILLS file for example )  
+#
+# the format of the TEST_TYPES file is (notice the '!' as a field separator, to allow
+# for spaces in the test_grep)
+#
+# Ntest_types 
+# test_grep_1 ! test_col_1  ! std_out ! ./script_to_be_executed_before.sh 
+# # a comment if you wnat
+# test_grep_2 ! test_col_2  ! std_out  
+# # a comment if you want
+# ....
+# followed by comment lines
+#   
+# a negative value for the field is used to  
+#

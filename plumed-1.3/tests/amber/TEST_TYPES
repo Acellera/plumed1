@@ -1,0 +1,56 @@
+17
+# NSTEP   1 
+NSTEP ! 3  ! std_out
+# time    2
+NSTEP ! 6   ! std_out
+# temp   3
+NSTEP ! 9  ! std_out
+# press  4
+NSTEP ! 12  ! std_out
+# etot  5
+Etot ! 3  ! std_out
+# ektot 6 
+Etot ! 6  ! std_out
+# eptot 7
+Etot ! 9  ! std_out
+# BOND 8
+BOND ! 3  ! std_out
+# angle 9
+BOND ! 6  ! std_out
+# dihed 10
+BOND ! 9  ! std_out
+# 1-4NB  11
+1-4 ! 4 ! std_out
+#  1-4 EEl 12
+1-4 ! 8 ! std_out
+# VDWAALS 13
+1-4 ! 11 ! std_out
+# EELEC 14 
+EELEC  ! 3 ! std_out
+# EHBOND 15
+EELEC  ! 6 ! std_out
+# RESTRAINT 16
+EELEC  ! 9 ! std_out
+# take just the last line of the file and compare it all 17
+ ! 0 ! HILLS 
+#
+# these are the tests the can be selected for regtesting. 
+# do regtest will grep for test_grep (first column) and look if the numeric value (no value will try to match  the last line )
+# at column test_col (second col, 0 stand for all the line matching ) changes with respect to the reference.
+# the test number in TEST_FILES corresponds to the lines in this file.
+# the third column is the file name in which the test should be executed. "std_out"  
+# is the standard output for the simulation while all the others are taken literally
+# the fourth column (optional) provide the possibility of executing a script before the  
+# run is performed ( used for checking the restart of HILLS file for example )  
+#
+# the format of the TEST_TYPES file is (notice the '!' as a field separator, to allow
+# for spaces in the test_grep)
+#
+# Ntest_types 
+# test_grep_1 ! test_col_1  ! std_out ! ./script_to_be_executed_before.sh 
+# # a comment if you wnat
+# test_grep_2 ! test_col_2  ! std_out  
+# # a comment if you want
+# ....
+# followed by comment lines
+#

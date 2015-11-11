@@ -1,0 +1,7 @@
+PRINT W_STRIDE 1
+#
+# the two distances for hydrogen bonds 
+#
+DISTANCE LIST 18 6  
+DISTANCE LIST 16 8  
+ENDMETA

@@ -1,0 +1,15 @@
+# switching on metadynamics and Guassian parameters
+# 0.126 kcal/mol = 0.0002 Ry
+HILLS HEIGHT 0.0005 W_STRIDE 1
+# instruction for CVs printout
+PRINT W_STRIDE 1
+# the distance between C-Cl' and C-Cl
+DISTANCE LIST 1 3 SIGMA 0.15
+DISTANCE LIST 2 3 SIGMA 0.15
+#WALLS
+UWALL CV 1 LIMIT 8.0 KAPPA 100.0
+LWALL CV 1 LIMIT 2.0 KAPPA 100.0
+UWALL CV 2 LIMIT 8.0 KAPPA 100.0
+LWALL CV 2 LIMIT 2.0 KAPPA 100.0
+# end of the input
+ENDMETA

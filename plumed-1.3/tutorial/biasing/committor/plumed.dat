@@ -1,0 +1,13 @@
+PRINT W_STRIDE 100 
+#
+# Phi and psi angles
+#
+TORSION LIST 5 7 9 15   
+TORSION LIST 7 9 15 17 
+#
+# LWALL: a lower wall  
+# UWALL : an upper wall
+#
+UWALL CV 1 LIMIT  0.1 KAPPA 100.0 
+LWALL CV 1 LIMIT -0.1 KAPPA 100.0 
+ENDMETA

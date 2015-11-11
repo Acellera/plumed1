@@ -1,0 +1,31 @@
+DL_POLY TEST CASE 3: Valinomycin in water
+
+restart               scale
+
+temperature           310.00
+pressure              0.0010
+ensemble nvt hoover   0.5
+
+steps                 1000
+equilibration         0
+scale                 1
+print                 1
+stats                 1
+
+timestep              0.0020
+cutoff                12.000
+delr width            1.2000
+rvdw cutoff           10.000
+coul
+shake tolerance       1.0E-8
+quaternion tolerance  1.0E-5
+
+job time              6000.00
+close time            100.00
+
+traj                  0 100 0
+
+plumed                on 
+plumedfile            steer.cfg
+
+finish 

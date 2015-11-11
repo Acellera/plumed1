@@ -1,0 +1,45 @@
+
+HOW TO RUN THE TESTS (courtesy of Joost VandeVondele):
+
+The user may run a regtest script for the chosen MD package in the "tests/my_md_package" directory.
+This works both as a regularity test in case the user implements its own modifications and as complete
+suite of example to show capabilities  of the plugin.
+The user should edit the test script (for namd is  /tests/namd/do_regtest_namd.sh) to set up the test directory:
+
+dir_base=/Programs/md_meta/tests/namd
+
+and the location of the executable
+
+namd_prefix="/chicco/bin/namd_plugin/namd2"
+
+and execute the script:
+
+./do_regtest_namd.sh
+
+Regtest scripts for the other programs require an identical procedure.
+
+Please note that:
+ 1) The tests for GROMACS are designed for and should be executed with the
+     double-precision version of the code;
+ 2) Biasxmd and ptmetad are designed for the parallel version of GROMACS.
+    The user should specify in the test script the location of the parallel executable and the version
+    (3 or 4) of GROMACS used. These tests will fail if the parallel version of
+    GROMACS has not been compiled.
+
+What does a regtest do:
+    - executes a list of tests
+    - compares the results (outputs) with those of the last known result (reference) .
+        please note: when the script is run for the first time it produces the reference.
+    - produces a summary
+
+Interpretation of the results
+  test can be:
+    - 'OK' if the results match those of a previous run precisely. The execution time is also given.
+    - 'NEW' if they have not been executed previously. The reference result is generated
+      automatically in this run. Tests can also be 'NEW' if they have been reset, i.e. been newly
+      added to the TEST_FILES_RESET files.
+    - 'RUNTIME FAILURE' if they stopped unexpectedly (e.g. core dump, or stop)
+    - 'WRONG RESULT' if they produce a result that deviates (even a tiny bit) from an old reference
+  the last two options generally mean that a bug has been introduced, which requires investigation.
+  since regtesting only yields information relative to a previously known result, it is most useful
+  to do a regtest before and after you make changes.

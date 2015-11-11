@@ -1,0 +1,15 @@
+HILLS HEIGHT 0.1 W_STRIDE 100
+PRINT W_STRIDE 100 
+
+#debug use (with NOALIGN)
+PCA FRAME ref.dat EIGENVEC egv0.dat NOALIGN SIGMA 0.1
+PCA FRAME ref.dat EIGENVEC egv0.dat NOALIGN DIFF SIGMA 0.1
+
+#variant (without DIFF)
+PCA FRAME ref.dat EIGENVEC egv0.dat SIGMA 0.1
+
+#typical use (with DIFF)
+PCA FRAME ref.dat EIGENVEC egv0.dat DIFF SIGMA 0.1
+PCA FRAME ref.dat EIGENVEC egv1.dat DIFF SIGMA 0.1
+
+ENDMETA

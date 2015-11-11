@@ -1,0 +1,15 @@
+#
+# put all the dirs you need for testing
+#
+alphabeta
+angle
+angle_group
+coord
+dihcor
+distance
+distance_group
+energy
+grid
+hbonds
+mindist
+torsion

@@ -1,0 +1,14 @@
+HEADER    alanine dipeptide
+COMPND
+SOURCE
+ATOM      1  CH3 ACE     1       0.000   0.000   0.000
+ATOM      2  C   ACE     1       0.000   0.000   1.510
+ATOM      3  O   ACE     1       1.029   0.000   2.166
+ATOM      4  N   ALA     2      -1.236   0.000   2.027
+ATOM      5  CA  ALA     2      -1.447   0.000   3.472
+ATOM      6  C   ALA     2      -2.510  -0.993   3.879
+ATOM      7  O   ALA     2      -3.570  -1.099   3.284
+ATOM      8  CB  ALA     2      -1.910   1.397   3.924
+ATOM      9  N   NME     3      -2.154  -1.723   4.944
+ATOM     10  CH3 NME     3      -3.048  -2.740   5.491
+END

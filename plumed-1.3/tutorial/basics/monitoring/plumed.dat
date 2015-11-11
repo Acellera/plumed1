@@ -1,0 +1,7 @@
+PRINT W_STRIDE 100 
+#
+# Phi and psi angles
+#
+TORSION LIST 5 7 9 15   
+TORSION LIST 7 9 15 17 
+ENDMETA

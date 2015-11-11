@@ -1,0 +1,17 @@
+PRINT W_STRIDE 100 
+HILLS HEIGHT 0.1 W_STRIDE 100 
+ANGLE LIST <group1> <group2> <group3> SIGMA 0.35
+
+group1->
+2 5  
+group1<-
+
+group2->
+ 9 11  
+group2<-
+
+group3->
+17 19 
+group3<-
+
+ENDMETA

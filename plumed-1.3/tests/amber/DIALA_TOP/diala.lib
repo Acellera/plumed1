@@ -1,0 +1,173 @@
+!!index array str
+ "diala"
+!entry.diala.unit.atoms table  str name  str type  int typex  int resx  int flags  int seq  int elmnt  dbl chg
+ "HH31" "HC" 0 1 131072 1 1 0.112300
+ "CH3" "CT" 0 1 131072 2 6 -0.366200
+ "HH32" "HC" 0 1 131072 3 1 0.112300
+ "HH33" "HC" 0 1 131072 4 1 0.112300
+ "C" "C" 0 1 131072 5 6 0.597200
+ "O" "O" 0 1 131072 6 8 -0.567900
+ "N" "N" 0 2 131072 1 7 -0.415700
+ "H" "H" 0 2 131072 2 1 0.271900
+ "CA" "CT" 0 2 131072 3 6 0.033700
+ "HA" "H1" 0 2 131072 4 1 0.082300
+ "CB" "CT" 0 2 131072 5 6 -0.182500
+ "HB1" "HC" 0 2 131072 6 1 0.060300
+ "HB2" "HC" 0 2 131072 7 1 0.060300
+ "HB3" "HC" 0 2 131072 8 1 0.060300
+ "C" "C" 0 2 131072 9 6 0.597300
+ "O" "O" 0 2 131072 10 8 -0.567900
+ "N" "N" 0 3 131072 1 7 -0.415700
+ "H" "H" 0 3 131072 2 1 0.271900
+ "CH3" "CT" 0 3 131072 3 6 -0.149000
+ "HH31" "H1" 0 3 131072 4 1 0.097600
+ "HH32" "H1" 0 3 131072 5 1 0.097600
+ "HH33" "H1" 0 3 131072 6 1 0.097600
+!entry.diala.unit.atomspertinfo table  str pname  str ptype  int ptypex  int pelmnt  dbl pchg
+ "HH31" "HC" 0 -1 0.0
+ "CH3" "CT" 0 -1 0.0
+ "HH32" "HC" 0 -1 0.0
+ "HH33" "HC" 0 -1 0.0
+ "C" "C" 0 -1 0.0
+ "O" "O" 0 -1 0.0
+ "N" "N" 0 -1 0.0
+ "H" "H" 0 -1 0.0
+ "CA" "CT" 0 -1 0.0
+ "HA" "H1" 0 -1 0.0
+ "CB" "CT" 0 -1 0.0
+ "HB1" "HC" 0 -1 0.0
+ "HB2" "HC" 0 -1 0.0
+ "HB3" "HC" 0 -1 0.0
+ "C" "C" 0 -1 0.0
+ "O" "O" 0 -1 0.0
+ "N" "N" 0 -1 0.0
+ "H" "H" 0 -1 0.0
+ "CH3" "CT" 0 -1 0.0
+ "HH31" "H1" 0 -1 0.0
+ "HH32" "H1" 0 -1 0.0
+ "HH33" "H1" 0 -1 0.0
+!entry.diala.unit.boundbox array dbl
+ -1.000000
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+!entry.diala.unit.childsequence single int
+ 4
+!entry.diala.unit.connect array int
+ 0
+ 0
+!entry.diala.unit.connectivity table  int atom1x  int atom2x  int flags
+ 5 6 1
+ 5 7 1
+ 2 3 1
+ 2 4 1
+ 2 5 1
+ 1 2 1
+ 15 16 1
+ 15 17 1
+ 11 12 1
+ 11 13 1
+ 11 14 1
+ 9 10 1
+ 9 11 1
+ 9 15 1
+ 7 8 1
+ 7 9 1
+ 19 20 1
+ 19 21 1
+ 19 22 1
+ 17 18 1
+ 17 19 1
+!entry.diala.unit.hierarchy table  str abovetype  int abovex  str belowtype  int belowx
+ "U" 0 "R" 1
+ "R" 1 "A" 6
+ "R" 1 "A" 5
+ "R" 1 "A" 4
+ "R" 1 "A" 3
+ "R" 1 "A" 2
+ "R" 1 "A" 1
+ "U" 0 "R" 2
+ "R" 2 "A" 16
+ "R" 2 "A" 15
+ "R" 2 "A" 14
+ "R" 2 "A" 13
+ "R" 2 "A" 12
+ "R" 2 "A" 11
+ "R" 2 "A" 10
+ "R" 2 "A" 9
+ "R" 2 "A" 8
+ "R" 2 "A" 7
+ "U" 0 "R" 3
+ "R" 3 "A" 22
+ "R" 3 "A" 21
+ "R" 3 "A" 20
+ "R" 3 "A" 19
+ "R" 3 "A" 18
+ "R" 3 "A" 17
+!entry.diala.unit.name single str
+ "ACE"
+!entry.diala.unit.positions table  dbl x  dbl y  dbl z
+ 2.017783 1.035329 0.054217
+ 1.999807 2.125067 0.053808
+ 1.425417 2.484390 0.907240
+ 1.532631 2.482321 -0.863870
+ 3.422291 2.659789 0.138902
+ 4.360722 1.898449 0.363160
+ 3.587919 3.960357 -0.113839
+ 2.785920 4.543661 -0.304660
+ 4.891953 4.590594 -0.067515
+ 5.443298 4.233800 0.802642
+ 5.661669 4.234940 -1.335425
+ 5.108956 4.585483 -2.206815
+ 6.641908 4.711134 -1.310331
+ 5.785126 3.153520 -1.393185
+ 4.722241 6.100413 0.021521
+ 3.603508 6.605763 -0.039872
+ 5.843118 6.824265 0.073517
+ 6.741538 6.363597 0.087584
+ 5.820970 8.273350 0.056993
+ 4.787909 8.621593 0.051814
+ 6.330303 8.655676 0.941733
+ 6.329077 8.632950 -0.838308
+!entry.diala.unit.residueconnect table  int c1x  int c2x  int c3x  int c4x  int c5x  int c6x
+ 1 5 0 0 0 0
+ 7 15 0 0 0 0
+ 17 19 0 0 0 0
+!entry.diala.unit.residues table  str name  int seq  int childseq  int startatomx  str restype  int imagingx
+ "ACE" 1 7 1 "p" 0
+ "ALA" 2 11 7 "p" 0
+ "NME" 3 7 17 "p" 0
+!entry.diala.unit.residuesPdbSequenceNumber array int
+ 1
+ 2
+ 3
+!entry.diala.unit.solventcap array dbl
+ -1.000000
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+!entry.diala.unit.velocities table  dbl x  dbl y  dbl z
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0

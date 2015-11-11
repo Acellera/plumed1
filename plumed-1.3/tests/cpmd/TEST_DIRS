@@ -1,0 +1,10 @@
+#
+# put all the dirs you need for testing
+#
+distance
+coord
+sprint
+#
+# The tests above run a wavefunction optimization + Car-Parrinello MD simulation 
+# of 200 steps on a Si_3 cluster at DFT-LDA level.
+#

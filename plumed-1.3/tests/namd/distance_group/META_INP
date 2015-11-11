@@ -1,0 +1,14 @@
+PRINT W_STRIDE 100 
+HILLS HEIGHT 0.1 W_STRIDE 100 
+DISTANCE LIST <group1> <group2> SIGMA 0.35
+
+group1->
+13 10 11
+12
+group1<-
+
+group2->
+17 18 
+19
+group2<-
+ENDMETA

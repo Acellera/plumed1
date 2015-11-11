@@ -1,0 +1,13 @@
+# CPMD units are a.u.: energy = hartree, distance = bohr, time = 0.024 fs
+HILLS HEIGHT 0.001 W_STRIDE 20
+PRINT W_STRIDE 5
+
+all->
+ 1 2 3
+all<-
+
+SPRINT LIST <all> NN 6 MM 12 R_0 1 5.0 INDEX 1 SIGMA 0.1
+SPRINT LIST <all> NN 6 MM 12 R_0 1 5.0 INDEX 2 SIGMA 0.1
+SPRINT LIST <all> NN 6 MM 12 R_0 1 5.0 INDEX 3 SIGMA 0.1
+
+ENDMETA
