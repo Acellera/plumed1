@@ -415,9 +415,9 @@ void mtd_data_init( real *charge, real *mass,
 
 }
 
-void meta_force_calculation(struct aceplug_sim_t* s )
+void meta_force_calculation(struct aceplug_sim_t* s, double energy_pe, int rex )
 {
-   int i;
+   int i,icv_ene=-1;
 
    // take step, box from environment
    mtd_data.istep=s->step;
@@ -434,9 +434,21 @@ void meta_force_calculation(struct aceplug_sim_t* s )
      //mtd_data.vel[i][2] = (double) s->vel[i].z;
    }
 
+	if (logical.energy && rex) {
+  	mtd_data.energy = energy_pe;
+  	for (i=0;i<colvar.nconst;i++) {       
+    	if (colvar.type_s[i]==35) {icv_ene = i;break;}  
+		}
+	}
+
    restraint(&mtd_data);
 
    for(i=0;i<mtd_data.natoms;i++){
+		if(logical.energy && rex ){
+			mtd_data.force[i][0]+=-colvar.d_0[icv_ene]*(s->frc[i].x);
+			mtd_data.force[i][1]+=-colvar.d_0[icv_ene]*(s->frc[i].y);
+			mtd_data.force[i][2]+=-colvar.d_0[icv_ene]*(s->frc[i].z); 
+		}
      s->frc[i].x= s->frc[i].x+mtd_data.force[i][0];
      s->frc[i].y= s->frc[i].y+mtd_data.force[i][1];
      s->frc[i].z= s->frc[i].z+mtd_data.force[i][2];

@@ -1,19 +1,14 @@
 CPPFLAGS=-I./ 
 SRC=*.c
-OUT=plumed.so
 
-default: $(OUT)
+default: libplumed1plugin.so libplumed1plugin-rex.so
 
-links:
-	ln -s -f ../common_files/* .
+libplumed1plugin.so: ../common_files/*.c plug-in-metad.c
+	gcc  $(CPPFLAGS) -O3 -DACEMD -fPIC --shared -o libplumed1plugin.so ../common_files/*.c plug-in-metad.c -I../common_files
 
-$(OUT): links
-	gcc  $(CPPFLAGS) -O3 -DACEMD -fPIC --shared -o $(OUT) *.c
+libplumed1plugin-rex.so: ../common_files/*.c plug-in-metad-rex.c
+	gcc  $(CPPFLAGS) -O3 -DACEMD -fPIC --shared -o libplumed1plugin-rex.so ../common_files/*.c plug-in-metad-rex.c -I../common_files
 
 clean:
-	rm -f $(OUT) 
-	find -type l -delete
-	find -name \*~ -delete
+	rm -f lib*.so
 
-veryclean: clean
-	rm *~ TAGS

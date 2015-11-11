@@ -1059,7 +1059,7 @@ class Plumed
  void init_metadyn(int natoms, real *charge, real *mass, 
                    real dt, int repl, int nrepl, 
                    real rte0, real rteio, char *metainp, real box[3]);
- void meta_force_calculation(struct aceplug_sim_t* );
+ void meta_force_calculation(struct aceplug_sim_t*, double e, int rex );
 #elif defined(DL_POLY) || defined(AMBER) || defined(PLUMED_QESPRESSO) || defined (GAT_LJONES)
  void mtd_data_init(int atoms, real dt ,real *mass, real *charge, int *imcon, real *eunit, char *metainp);
  void meta_force_calculation_(real *cell, int *istep, real *xxx, real *yyy, real *zzz, real *fxx, real *fyy, real *fzz, real *energy);
