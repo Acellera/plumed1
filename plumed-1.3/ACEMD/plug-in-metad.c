@@ -144,10 +144,10 @@ aceplug_err_t aceplug_endstep( struct aceplug_sim_t *s) {
 	double vel_scale_factor = 0.;
 
 
-	if( ACEPLUG_OK !=	s->plugin_get_energy_temp( energy_mine ) ) {
+//	if( ACEPLUG_OK !=	s->plugin_get_energy_temp( energy_mine ) ) {
 	//	fprintf( stderr, "# REMD : Unable to get energies: not an output step. Set pluginfreq to be a multiple of energyfreq\n" );
-		return 0;
-	}
+//		return 0;
+//	}
 
 	return 0;
 	
