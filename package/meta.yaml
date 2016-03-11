@@ -4,6 +4,10 @@ package:
 
 build:
  number: {{ environ.get('BUILD_NUMBER', 0 ) }}
+ script_env:
+  - FC
+  - CC
+  - CXX
 
 source:
  path: ../plumed-1.3
