@@ -14,7 +14,8 @@ matrix:
      addons:
       apt:
        packages:
-       - gfortran
+       - gfortran-4.4
+       - gcc-4.4
    - os: linux
      dist: precise
      language: generic
@@ -22,7 +23,8 @@ matrix:
      addons:
       apt:
        packages:
-       - gfortran
+       - gfortran-4.4
+       - gcc-4.4
 
    - os: osx
      language: generic
