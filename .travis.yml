@@ -26,10 +26,10 @@ matrix:
 
    - os: osx
      language: generic
-     env: TRAVIS_PYTHON_VERSION=3.4
+     env: TRAVIS_PYTHON_VERSION=3.4 CC=gcc FC=gfortran
    - os: osx
      language: generic
-     env: TRAVIS_PYTHON_VERSION=3.5
+     env: TRAVIS_PYTHON_VERSION=3.5 CC=gcc FC=gfortran
 
 
 install:
