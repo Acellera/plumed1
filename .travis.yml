@@ -1,5 +1,5 @@
 git:
- depth: 3  
+ depth: 3   
 branches:
  only:
   - master
@@ -10,10 +10,16 @@ matrix:
      dist: precise
      language: generic
      env: TRAVIS_PYTHON_VERSION=3.4
+     addons:
+      apt:
+       - gfortran
    - os: linux
      dist: precise
      language: generic
      env: TRAVIS_PYTHON_VERSION=3.5
+     addons:
+      apt:
+       - gfortran
    - os: osx
      language: generic
      env: TRAVIS_PYTHON_VERSION=3.4
