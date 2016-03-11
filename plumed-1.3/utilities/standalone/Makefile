@@ -3,7 +3,7 @@ cfiles = $(wildcard *.c)
 cxxfiles = $(wildcard *.cpp)
 OBJ= $(ffiles:.f90=.o) $(cfiles:.c=.o) $(cxxfiles:.cpp=.o)
 
-arch=g95
+arch=gfortran
 
 
 ifeq ($(arch),gfortran)

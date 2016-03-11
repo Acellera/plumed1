@@ -1,0 +1,17 @@
+package:
+ name: plumed1
+ version: {{ environ.get('BUILD_VERSION', "0.0.1" ) }}
+
+build:
+ number: {{ environ.get('BUILD_NUMBER', 0 ) }}
+
+source:
+ path: ../plumed-1.3
+
+requirements:
+ build:
+
+ run:
+
+about:
+ license: "LGPL"
